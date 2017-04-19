@@ -1,0 +1,21 @@
+body {
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  font-style: normal;
+  font-family: Cuprum;
+}
+.group-name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-style: bold;
+  font-family: Cuprum;
+}
+.item-name {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  font-style: bold;
+  font-family: Cuprum;
+}
