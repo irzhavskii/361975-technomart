@@ -58,10 +58,11 @@
       </nav>
     </header>
     <main class="container">
+      <div class="group-content clearfix">
         <div class="group material">
           <p class="group-name">Материалы</p>
           <a href="#" class="group-btn">На любой вкус</a>
-          <p class="flag">new</p>
+          <!--    <p class="flag">new</p> !-->
         </div>
         <div class="group tool">
           <p class="group-name">Инструмент</p>
@@ -84,11 +85,12 @@
             <p class="group-name">Доставка</p>
             <a href="#" class="group-btn">Бесплатно</a>
         </div>
-        <div class="popular">
+      </div>
+      <div class="popular">
           <h2 class="name">Популярные товары</h2>
           <a class="popular-btn" href="#">Все популярные товары</a>
         </div>
-          <div class="items">
+        <div class="items clearfix">
             <div class="item">
               <img src="img/bosch_drill_1.jpg" width="220" height="190" alt="catalog-item">
               <p class="item-name">Перфоратор BOSCH BFG 9000</p>
@@ -130,11 +132,11 @@
               </div>
             </div>
           </div>
-        <div class="popular-producers">
+      <div class="popular-producers">
           <h2 class="name">Популярные производители:</h2>
           <a class="popular-btn" href="#">Все производители</a>
         </div>
-      <div class="producers">
+      <div class="producers clearfix">
         <div class="producer">
           <a href="#">
             <img src="img/photo-1.jpg" width="220" height="145" alt="producer">
@@ -164,7 +166,8 @@
            <a href="#">
             <img src="img/photo-1.jpg" width="220" height="145" alt="producer">
           </a>
-        </div  class="producer">
+        </div>
+        <div class="producer">
           <a href="#">
             <img src="img/photo-1.jpg" width="220" height="145" alt="producer">
           </a>
@@ -193,9 +196,10 @@
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         <img src="img/delivery.png" width="220" height="145" alt="delivery">
       </div>
-      <div class="about-us">
-        <h2>Компания "Техномарт"</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
+      <div class="about-us clearfix">
+        <div class="about-us-left">
+          <h2>Компания "Техномарт"</h2>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
           Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
           <ul class="cooperates">
             <li>Деловые линии</li>
@@ -205,6 +209,7 @@
           <a href="#" class="about-us-btn">Подробнее о компании</a>
         </div>
         <div class="contacts">
+          <p class="contacts-name">Контакты</p>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a href="#" class="map">
             <img src="img/photo-1.jpg" width="240" height="170" alt="map">
@@ -227,6 +232,7 @@
             </div>
           </form>
         </div>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="container">
@@ -275,24 +281,26 @@
               </li>
             </ul>
           </nav>
-          <section class="footer-received">
-          @ 2010-2017 Компания «Техномарт»<br>
-          Все права защищены
-        </section>
-        <section class="footer-social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-mail">
-          <p class="mail">Обратная связь:</p>
-          <a href="#" class="e-mail">mail@htmlacademy.ru</a>
-        </section>
-        <section class="footer-copyright">
-          <p>Разработано - </p>
-          <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        </section>
+          <div class="footer-bottom">
+            <section class="footer-received">
+            @ 2010-2017 Компания «Техномарт»<br>
+            Все права защищены
+            </section>
+            <section class="footer-social">
+              <p>Давайте дружить!</p>
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </section>
+            <section class="footer-mail">
+              <p class="mail">Обратная связь:</p>
+              <a href="#" class="e-mail">mail@htmlacademy.ru</a>
+            </section>
+            <section class="footer-copyright">
+              <p>Разработано - </p>
+              <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            </section>
+          </div>
         </div>
       </div>
     </footer>
