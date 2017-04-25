@@ -41,10 +41,39 @@ body {
   background-color: yellowgreen;
 }
 .middle-header {
+<<<<<<< HEAD
   min-height: 280px;
   padding-top: 45px;
   margin-bottom: 60px;
   background-color: lightgreen;
+=======
+  min-height: 70px;
+  margin-bottom: 60px;
+  background-color: lightgreen;
+}
+.info {
+  float: left;
+  margin-left: 50px;
+  margin-top: 0px;
+  width: 250px;
+  min-height:65px;
+  margin-right: 20px;
+  background-color: gray;
+
+}
+.header-contacts {
+  float: left;
+  width: 300px;
+  min-height: 70px;
+  margin-right: 20px;
+  background-color: gray;
+}
+.user-block {
+  float: right;
+  width: 300px;
+  min-height: 45px;
+  background-color: gray;
+>>>>>>> origin/master
 }
 .bottom-header {
   padding-top: 45px;
@@ -84,7 +113,14 @@ body {
   min-height: 125px;
   background-color: yellowgreen;
 }
+<<<<<<< HEAD
 .tech,
+=======
+.tech{
+  float: right;
+  margin-right:0px;
+}
+>>>>>>> origin/master
 .discount,
 .delivery {
   float: right;
@@ -160,7 +196,11 @@ body {
   width: 400px;
   margin-bottom:75px;
 }
+<<<<<<< HEAD
 .services .delivery {
+=======
+.services>.delivery {
+>>>>>>> origin/master
   float: left;
   width: 240px;
   min-height: 185px;
@@ -207,6 +247,7 @@ body {
 .middle-footer {
   min-height: 45px;
   margin-bottom: 55px;
+<<<<<<< HEAD
 }
 .footer-middle-navigation{
     float: right;
@@ -218,6 +259,13 @@ body {
   min-height: 105px;
   background-color: green;
   padding-top: 35px;
+=======
+  background-color: green;
+}
+.bottom-footer {
+  min-height: 110px;
+  background-color: lightgreen;
+>>>>>>> origin/master
 }
 .footer-bottom section {
   float: left;
@@ -291,6 +339,7 @@ body {
   background-color: yellowgreen;
 }
 .item:nth-child(3n) {
+
   margin-right: 0px;
 }
 .paginator {
