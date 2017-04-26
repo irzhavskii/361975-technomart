@@ -21,7 +21,6 @@ body {
 /*Сетка*/
 html,
 body {
-  min-width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -41,43 +40,20 @@ body {
   background-color: yellowgreen;
 }
 .middle-header {
-<<<<<<< HEAD
-  min-height: 280px;
-  padding-top: 45px;
   margin-bottom: 60px;
   background-color: lightgreen;
-=======
-  min-height: 70px;
-  margin-bottom: 60px;
-  background-color: lightgreen;
+  padding-bottom: 60px;
 }
-.info {
-  float: left;
-  margin-left: 50px;
-  margin-top: 0px;
-  width: 250px;
-  min-height:65px;
-  margin-right: 20px;
-  background-color: gray;
-
-}
-.header-contacts {
-  float: left;
-  width: 300px;
-  min-height: 70px;
-  margin-right: 20px;
-  background-color: gray;
-}
-.user-block {
-  float: right;
-  width: 300px;
-  min-height: 45px;
-  background-color: gray;
->>>>>>> origin/master
-}
-.bottom-header {
+.middle-header-menu {
   padding-top: 45px;
+  min-height: 160px;
+}
+.main-navigation  {
+  background-color: green;
   min-height: 60px;
+}
+.main-navigation ul li{
+  float: left;
 }
 .main-list li{
   float: left;
@@ -113,14 +89,7 @@ body {
   min-height: 125px;
   background-color: yellowgreen;
 }
-<<<<<<< HEAD
 .tech,
-=======
-.tech{
-  float: right;
-  margin-right:0px;
-}
->>>>>>> origin/master
 .discount,
 .delivery {
   float: right;
@@ -135,7 +104,6 @@ body {
   min-height: 270px;
   background-color: yellowgreen;
   margin-bottom: 0px;
-
 }
 .group-content {
   margin-bottom: 55px;
@@ -148,6 +116,7 @@ body {
 .popular-head {
   min-height: 90px;
   margin-bottom: 20px;
+  background-color: lightgreen;
 }
 .popular-btn {
   float: right;
@@ -169,6 +138,7 @@ body {
 .popular-producers-head {
   min-height: 90px;
   margin-bottom: 20px;
+  background-color: lightgreen;
 }
 .popular-producers {
   min-height: 90px;
@@ -185,22 +155,14 @@ body {
   margin-right: 0px;
 }
 .services {
-  min-height: 525px;
-  margin-bottom: 80px;
   background-color: yellowgreen;
-  min-width: 940px;
-  margin: 0 auto;
 }
 .service-head {
   padding-top: 65px;
   width: 400px;
   margin-bottom:75px;
 }
-<<<<<<< HEAD
 .services .delivery {
-=======
-.services>.delivery {
->>>>>>> origin/master
   float: left;
   width: 240px;
   min-height: 185px;
@@ -216,16 +178,20 @@ body {
   width: 300px;
   background-color: gray;
 }
+.about-us {
+  background-color: olive;
+  min-height: 535px;
+}
 .about-us-left {
+  padding-top: 80px;
   width: 540px;
   float: left;
   min-height: 375px;
-  background-color: yellowgreen;
 }
 .contacts {
+  padding-top: 80px;
   float: right;
   width: 300px;
-  background-color: yellowgreen;
 }
 .form-popup {
   display: none;
@@ -238,18 +204,28 @@ body {
   background-color: lightgreen;
   padding-bottom: 30px;
 }
+.logo-footer {
+  float: left;
+}
 .footer-main-navigation{
   float: right;
+  margin-top: 40px;
 }
 .footer-main-navigation li{
   float: left;
 }
 .middle-footer {
+  padding-top: 95px;
   min-height: 45px;
   margin-bottom: 55px;
-<<<<<<< HEAD
 }
-.footer-middle-navigation{
+.footer-contacts {
+  float: left;
+  width: 380px;
+  min-height: 45px;
+}
+.footer-middle-navigation {
+    margin-top: 0px;
     float: right;
 }
 .footer-middle-navigation li{
@@ -259,13 +235,6 @@ body {
   min-height: 105px;
   background-color: green;
   padding-top: 35px;
-=======
-  background-color: green;
-}
-.bottom-footer {
-  min-height: 110px;
-  background-color: lightgreen;
->>>>>>> origin/master
 }
 .footer-bottom section {
   float: left;
@@ -293,42 +262,44 @@ body {
 
 /*Сетка на каталог*/
 
-.breadcrumbs {
+.breadcrumbs  {
   min-height: 60px;
-  width: 900px;
-  background-color: green;
-
+  margin-bottom: 20px;
+}
+.breadcrumbs li {
+ display: inline;
 }
 .drill-head {
   min-height: 90px;
   background-color: yellowgreen;
+  margin-bottom: 20px;
 }
 .page-bg>.container>div {
   display: inline-block;
-}
-.breadcrumbs li {
-  float: left;
 }
 .filter {
   float: left;
   width: 220px;
   background-color: yellowgreen;
 }
+.sort-text {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
 .sort {
   float: right;
   width: 700px;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
   background-color: yellowgreen;
 }
 .sort-point {
   float: left;
-  width: 120px;
-  background-color: green;
+  width: 90px;
 }
 .catalog-items  {
   float: right;
   width: 700px;
-  background-color: yellow;
   margin-bottom: 40px;
 }
 .item {
@@ -339,18 +310,27 @@ body {
   background-color: yellowgreen;
 }
 .item:nth-child(3n) {
-
   margin-right: 0px;
 }
 .paginator {
   float: left;
-  margin-top: 55px;
+  margin-top: 50px;
   margin-bottom: 60px;
   width: 460px;
   min-height: 40px;
-  background-color: green;
+}
+.page-btn {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  background-color: yellowgreen;
+}
+.next {
+  width: 145px;
 }
 .about-tools {
-  min-height: 260px;
-  background-color: green;
+  padding-top: 65px;
+  min-height: 200px;
+  background-color: yellowgreen;
 }
