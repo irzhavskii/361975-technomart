@@ -52,6 +52,9 @@ body {
   background-color: green;
   min-height: 60px;
 }
+.main-navigation ul {
+  margin: 0px;
+}
 .main-navigation ul li{
   float: left;
 }
@@ -202,7 +205,7 @@ body {
 .top-footer {
   min-height: 70px;
   background-color: lightgreen;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 .logo-footer {
   float: left;
