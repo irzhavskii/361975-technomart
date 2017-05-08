@@ -2,32 +2,54 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  <!--  <div class="container_1">
+      <div class="bg">
+        <img src="img/technomart-index.png" width="1200px" height="3151px">
+      </div>
+    </div> !-->
     <header class="top-header">
-      <div class="container">
-        <a class="logo">Техномарт</a>
-        <form name="search" action="http://echo/htmlacademy.ru">
-          <input class="search" type="search" value="Поиск:">
-        </form>
-        <a class="bookmarks" href="#">Закладки:0</a>
-        <a class="basket" href="#">Корзина:0</a>
-        <a class="order" href="#">Оформить заказ</a>
+      <div class="container clearfix">
+        <ul class="top-header-menu">
+          <li>
+            <a class="logo">
+              <img src="img/logo.png" width="220" height="47" alt="logo" >
+            </a>
+          </li>
+          <li>
+            <form name="search"  class="search" action="http://echo/htmlacademy.ru">
+              <input type="search" value="Поиск:">
+            </form>
+          </li>
+            <div class="top-list">
+            <li  class="bookmarks">
+              <a href="#">Закладки:0</a>
+            </li>
+            <li class="basket">
+              <a href="#">Корзина:0</a>
+            </li>
+            <li class="order">
+              <a href="#">Оформить заказ</a>
+            </li>
+          </div>
+        </ul>
       </div>
     </header>
     <header class="middle-header">
       <div class="container  middle-header-menu">
-        <p class="info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="info">Интернет-магазин <br>строительных материалов <br> и инструментов для ремонта</p>
         <section class="header-contacts">
           <p class="tel">+7 (812) 555-05-55</p>
-          <p class="adds">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+          <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
         </section>
-        <section class="user-block">
+        <div class="user-block">
           <a class="login" href="#">Войти</a>
           <a class="registration" href="#">Регистрация</a>
-        </section>
+        </div>
       </div>
       <div class="container clearfix">
         <nav class="main-navigation ">
@@ -58,7 +80,7 @@
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container background-page">
         <div class="group-content clearfix">
           <div class="group material flag">
             <p class="group-name">Материалы</p>
@@ -79,7 +101,7 @@
               <a href="#" class="group-drill-btn">Открыть каталог</a>
           </div>
           <div class="group discount">
-              <p class="group-name">Скидка 50%</p>
+              <p class="group-name">Скидки 50%</p>
               <a href="#" class="group-btn">На 350 товаров</a>
           </div>
           <div class="group delivery">
@@ -89,7 +111,7 @@
         </div>
         <div class="popular">
           <div class="popular-head">
-            <h2 class="popular-name">Популярные товары</h2>
+            <h2 class="popular-name">Популярные товары:</h2>
             <a class="popular-btn" href="#">Все популярные товары</a>
           </div>
           <div class="items clearfix">
@@ -127,7 +149,6 @@
                 <img src="img/bosch_drill_2.jpg" width="220" height="190" alt="catalog-item">
                 <p class="item-name">Перфоратор BOSCH BFG 2000</p>
                 <a href="#" class="price">12500 Р.</a>
-                <!--<p class="flag">new</p> !-->
                 <div class="actions">
                   <a class="buy-btn" href="#">Купить</a>
                   <a class="bookmark-btn" href="#">В закладки</a>
@@ -137,7 +158,7 @@
           </div>
         <div class="popular-producers">
             <div class="popular-producers-head">
-              <h2 class="name">Популярные производители:</h2>
+              <h2 class="producer-name">Популярные производители:</h2>
               <a class="popular-btn" href="#">Все производители</a>
             </div>
           <div class="producers clearfix">
@@ -188,9 +209,9 @@
         <div class="container clearfix">
           <section class="service-head">
             <p class="service">Сервисы</p>
-            <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </section>
-          <ul class="delivery">
+          <ul class="delivery-services">
             <li class="active">
               <a>Доставка</a>
             </li>
@@ -202,17 +223,17 @@
             </li>
           </ul>
           <section class="services-about">
-            <h2>Доставка</h2>
-            <p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            <h2 class="service-delivery">Доставка</h2>
+            <p class="services-delivery-text"> Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
           </section>
-          <img class="delivery-image" src="img/delivery.png" width="220" height="145" alt="delivery">
-        </div>
+        <!--  <img class="delivery-image" src="img/delivery.png" width="468" height="261" alt="delivery">
+      !-->  </div>
       </div>
       <div class="about-us container clearfix">
         <div class="about-us-left">
-          <h2>Компания "Техномарт"</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
-          Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
+          <h2 class="about-company">Компания "Техномарт"</h2>
+          <p class="about-text-top">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+          <p class="about-text-bottom"> Мы можем доставить ваш товар в самые отдаленные точки России! <br>Техномарт работает со многими транспортными компаниями: </p>
           <ul class="cooperates">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -222,7 +243,7 @@
         </div>
         <div class="contacts">
           <p class="contacts-name">Контакты</p>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <p class="contacts-text">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
           <a href="#" class="map">
             <img src="img/photo-1.jpg" width="240" height="170" alt="map">
           </a>
@@ -250,7 +271,7 @@
       <div class="top-footer">
         <div class="container clearfix">
           <div class="logo-footer">
-            <img src="img/photo-1.jpg" width="180" height="50" alt="logo-footer">
+            <img src="img/logo.png" width="220" height="47" alt="logo-footer">
           </div>
           <nav class="footer-main-navigation">
             <ul>
@@ -301,7 +322,6 @@
           Все права защищены
           </section>
           <section class="footer-social">
-            <p>Давайте дружить!</p>
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -312,7 +332,7 @@
           </section>
           <section class="footer-copyright">
             <p>Разработано - </p>
-            <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </section>
         </div>
       </div>

@@ -2,43 +2,64 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="top-header">
-      <div class="container">
-        <a class="logo" href="index.html">Техномарт</a>
-        <form name="search" action="http://echo/htmlacademy.ru">
-          <input class="search" type="search" value="Поиск:">
-        </form>
-        <a class="bookmarks" href="#">Закладки:0</a>
-        <a class="basket" href="#">Корзина:10</a>
-        <a class="order" href="#">Оформить заказ</a>
+      <div class="container clearfix">
+        <ul class="top-header-menu">
+          <li>
+            <a class="logo">
+              <img src="img/logo.png" width="220" height="47" alt="logo" >
+            </a>
+          </li>
+          <li>
+            <form name="search"  class="search" action="http://echo/htmlacademy.ru">
+              <input type="search" value="Поиск:">
+            </form>
+          </li>
+          <div class="top-list">
+            <li class="bookmarks" >
+              <a href="#">Закладки:0</a>
+            </li>
+            <li class="basket basket-active" >
+              <a href="#">Корзина:10</a>
+            </li>
+            <li class="order">
+              <a href="#">Оформить заказ</a>
+            </li>
+          </div>
+        </ul>
       </div>
     </header>
     <header class="middle-header">
-      <div class="container clearfix  middle-header-menu">
-        <p class="info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <div class="container  middle-header-menu">
+        <p class="info">Интернет-магазин <br>строительных материалов <br> и инструментов для ремонта</p>
         <section class="header-contacts">
           <p class="tel">+7 (812) 555-05-55</p>
-          <p class="address-header">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+          <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
         </section>
-        <section class="user-block">
-          <a class="user-pic" href="#profile">
-            <img src="user-pic.jpg" width="20" height="20" alt="user-pic">
-          </a>
-          <a class="user-name" href="#profile">Равшан Джамшутович</a>
-          <a class="exit-cab" href="#">
-            <img src="exit-cab.jpg" width="20" height="20" alt="exit-cabinet">
-          </a>
-          <a class="order" href="#">Мои заказы</a>
-          <a class="cabinet" href="#">Личный кабинет</a>
-        </section>
+        <div class="user-block">
+          <div class="user-block-name">
+            <a class="user-pic" href="#profile">
+              <img src="img/icon_user.png" width="20" height="20" alt="user-pic">
+            </a>
+            <a class="user-name" href="#profile">Равшан Джамшутович</a>
+            <a class="exit-cab" href="#">
+              <img src="img/icon_login.png" width="20" height="20" alt="exit-cabinet">
+            </a>
+          </div>
+          <div class="user-block-cab">
+            <a class="my-order" href="#">Мои заказы</a>
+            <a class="cabinet" href="#">Личный кабинет</a>
+          </div>
+        </div>
       </div>
       <div class="container clearfix">
-       <nav class="main-navigation ">
-         <ul>
+        <nav class="main-navigation ">
+          <ul>
             <li>
               <a href="index.html">Главная</a>
             </li>
@@ -68,7 +89,7 @@
       <div class="container">
         <ul class="breadcrumbs">
           <li>
-            <a class="home" href="index.html">home</a>
+            <a class="link sprite sprite--icon-home" href="index.html">home</a>
           </li>
           <li>
             <a class="link" href="catalog.html">Каталог</a>
@@ -85,50 +106,54 @@
           <p class="filter-name">Фильтр:</p>
           <p class="filter-title">Цена:</p>
           <form action="url" name="filters" class="filter-point">
-            <input class="range" type="range" min="0" max="30000">
-            <output class="range" name="min">0</output>
-            <p class="price-range">-</p>
-            <output class="range" name="max">30000</output>
-            <h3 class="filter-title">Производители:</h3>
-            <input class="checkbox" name="bosch" type="checkbox" id="bosch" checked>
-              <label for="bosch">Bosch</label>
-            <input class="checkbox" name="inter" type="checkbox" id="inter">
-              <label for="inter">Интерскол</label>
-            <input class="checkbox" name="makita" type="checkbox" id="makita" checked>
-              <label for="makita">Makita</label>
-            <input class="checkbox" name="dewolt" type="checkbox" id="dewolt">
-              <label for="dewolt">Dewolt</label>
-            <input class="checkbox" name="hitachi" type="checkbox" id="hitachi">
-              <label for="hitachi">Hitachi</label>
-            <h3 class="filter-title">Питание:</h3>
-            <input class="radio" value="a1" type="radio" id="r1" name="source" checked>
-              <label for="r1">Аккумуляторные</label>
-            <input class="radio" value="a2" type="radio" id="r2" name="source">
-              <label for="r2">Сетевые</label>
-            <input class="show-btn" type="submit" value="Показать">
+            <div class="form-range">
+              <input class="range" type="range" min="0" max="30000">
+              <output class="range-min" name="min">0</output>
+              <p class="price-range">-</p>
+              <output class="range-max" name="max">30000</output>
+            </div>
+              <div class="form-producer">
+                <h3 class="filter-title">Производители:</h3>
+                <div class="check-producer">
+                  <input class="checkbox" name="bosch" type="checkbox" id="bosch" checked>
+                    <label for="bosch">Bosch</label>
+                  <input class="checkbox" name="inter" type="checkbox" id="inter">
+                    <label for="inter">Интерскол</label>
+                  <input class="checkbox" name="makita" type="checkbox" id="makita" checked>
+                    <label for="makita">Makita</label>
+                  <input class="checkbox" name="dewolt" type="checkbox" id="dewolt">
+                    <label for="dewolt">Dewolt</label>
+                  <input class="checkbox" name="hitachi" type="checkbox" id="hitachi">
+                    <label for="hitachi">Hitachi</label>
+                </div>
+              <div class="form-source">
+                <h3 class="filter-title">Питание:</h3>
+                <input class="radio" value="a1" type="radio" id="r1" name="source" checked>
+                  <label for="r1">Аккумуляторные</label>
+                <input class="radio" value="a2" type="radio" id="r2" name="source">
+                  <label for="r2">Сетевые</label>
+              </div>
+              <input class="show-btn" type="submit" value="Показать">
+            </div>
           </form>
         </div>
         <div class="sort">
           <p class="sort-text">Сортировка:</p>
             <ul class="sort-by">
-              <li class="sort-point active">
+              <li class="sort-point type active">
                 <a>По цене</a>
               </li>
-              <li class="sort-point">
+              <li class="sort-point type">
                 <a href="#">По типу</a>
               </li>
-              <li class="sort-point">
+              <li class="sort-point type">
                 <a href="#">По функционалу</a>
               </li>
-              <li class="sort-point">
-                <a href="#">
-                  <img src="geom1.jpg" width="10" height="10" alt="sort-up">
-                </a>
+              <li class="sort-point sprite sprite--icon-up-dir">
+                <a href="#"></a>
               </li>
-              <li class="sort-point">
-                <a href="#">
-                  <img src="geom2.jpg" width="10" height="10" alt="sort-down">
-                </a>
+              <li class="sort-point sprite sprite--icon-down-dir">
+                <a href="#"></a>
               </li>
             </ul>
           </div>
@@ -228,7 +253,7 @@
             </div>
           </div>
           <div class="about-tools">
-            <p class="about-tools-title">Пара слов о перфораторах</p>
+            <div class="about-tools-title">Пара слов о перфораторах</div>
             <p class="about-tools-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
               Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
           </div>
@@ -238,7 +263,7 @@
         <div class="top-footer">
           <div class="container clearfix">
             <div class="logo-footer">
-              <img src="img/photo-1.jpg" width="180" height="50" alt="logo-footer">
+              <img src="img/logo.png" width="220" height="47" alt="logo-footer">
             </div>
             <nav class="footer-main-navigation">
               <ul>
@@ -289,10 +314,9 @@
             Все права защищены
             </section>
             <section class="footer-social">
-              <p>Давайте дружить!</p>
-              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+              <a class="sprite social-btn sprite--icon-vk-copy" href="#">Вконтакте</a>
+              <a class="sprite social-btn sprite--icon-facebook-copy" href="#">Фейсбук</a>
+              <a class="sprite social-btn sprite--icon-instagramm-copy" href="#">Инстаграм</a>
             </section>
             <section class="footer-mail">
               <p class="mail">Обратная связь:</p>
@@ -300,7 +324,7 @@
             </section>
             <section class="footer-copyright">
               <p>Разработано - </p>
-              <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+              <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </section>
           </div>
         </div>
